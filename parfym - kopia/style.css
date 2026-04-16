@@ -1,0 +1,837 @@
+* {
+  box-sizing: border-box;
+  /* Gör att padding och border räknas in i elementets totala storlek */
+}
+
+body {
+  margin: 0;
+  /* Tar bort standardmarginal på hela sidan */
+  padding: 0;
+  /* Tar bort standardpadding */
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  /* Lite utrymme inuti headern */
+  text-align: center;
+  /* Centrerar texten horisontellt */
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  /* Låter listobjekten ligga horisontellt */
+  list-style-type: none;
+  margin: 0;
+  /* Tar bort standardmarginal */
+  padding: 0;
+  /* Tar bort standardpadding */
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  /* Gör länkar till block så padding fungerar */
+  color: #f1f1f1;
+  padding: 14px 16px;
+  /* Inre luft runt länkarna */
+  text-decoration: none;
+  transition: background-color ease 0.4s;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.search {
+  height: 30px;
+  margin-top: 7px;
+}
+
+.nav-logo {
+  margin-left: 867px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+#hej {
+  text-align: center;
+  margin-top: -30px;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+.hej.section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.hero {
+  height: 60vh;
+  /* 60% av höjden på viewporten */
+  display: flex;
+  /* Flexbox för innehåll */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  /* Mindre text */
+  margin: 15px 0;
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  /* Runda hörn */
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.hero-content {
+  animation: fadeIn 1.5s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  opacity: 0;
+}
+
+.navicon {
+  display: flex;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: black;
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* mitten */
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Placera bilderna i en relativ container så att vi kan placera knappen ovanpå */
+.prada,
+.juan,
+.armani {
+  position: relative;
+  /* Detta gör att vi kan positionera knappar ovanpå bilderna */
+  width: 400px;
+  height: 500px;
+  margin-top: 67px;
+}
+
+/* Placera knappen inom varje bildcontainer */
+.image-btn {
+  position: absolute;
+  /* Gör att knappen kan placeras relativt till föräldern */
+  bottom: 20px;
+  /* Placera den längst ner på bilden */
+  left: 50%;
+  /* Centrera knappen horisontellt */
+  transform: translateX(-50%);
+  /* Justera för exakt centrering */
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+
+}
+
+/* Knappens hover-effekt */
+.image-btn:hover {
+  background: #444;
+}
+
+.prada {
+  background-image: url('images/bt1bannerlwebp.webp');
+  background-size: cover;
+  background-position: center;
+  margin-left: 30px;
+  color: whitesmoke;
+
+}
+
+.juan {
+  background-image: url('images/o.8ocUak0WJ2N.jpg');
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+
+}
+
+.armani {
+  background-image: url('images/post27-860x573.webp');
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px;
+  color: whitesmoke;
+}
+
+.pradat {
+  margin-left: 67px;
+  margin-top: 67px;
+  transition: ease-in-out 5s;
+}
+
+.juant {
+  margin-left: 67px;
+  margin-top: 67px;
+}
+
+.armanit {
+  margin-left: 105px;
+  margin-top: 67px;
+}
+
+footer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.search {
+  height: 30px;
+  margin-top: 7px;
+}
+
+.nav-logo {
+  margin-left: 867px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+#hej {
+  text-align: center;
+  margin-top: -30px;
+  font-size: 2.5rem;
+  /* Ställer in textstorlek (ca 40px) */
+  z-index: 10;
+  /* Visas ovanpå andra element */
+}
+
+.hej.section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+#Maison de Parfum {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  /* Textstorlek ca 48px */
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #111;
+}
+
+.btn {
+  display: inline-block;
+  /* Visas på samma rad men behåller block-egenskaper */
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.hero-content {
+  animation: fadeIn 1.5s ease forwards;
+  /* Startar en "fade-in" animation under 1,5 sek */
+  opacity: 0;
+  /* Startar med osynlighet */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Slutar synlig */
+    transform: translateY(0);
+    /* Flyttas tillbaka till ursprunglig position */
+  }
+
+  from {
+    opacity: 0;
+    /* Börjar osynlig */
+    transform: translateY(30px);
+    /* Flyttas 30px ner */
+  }
+}
+
+.navicon {
+  display: flex;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centrerar exakt */
+  font-size: 2rem;
+  /* Stor text/pil */
+  color: black;
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* mitten */
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Placera bilderna i en relativ container så att vi kan placera knappen ovanpå */
+.prada,
+.juan,
+.armani {
+  position: relative;
+  /* Detta gör att vi kan positionera knappar ovanpå bilderna */
+  width: 100%;
+  max-width: 400px;
+  height: 450px;
+
+  animation: fadeIn 6.7s ease forwards;
+
+}
+
+/* Placera knappen inom varje bildcontainer */
+.image-btn {
+  position: absolute;
+  /* Gör att knappen kan placeras relativt till föräldern */
+  bottom: 20px;
+  /* Placera den längst ner på bilden */
+  left: 50%;
+  /* Centrera knappen horisontellt */
+  transform: translateX(-50%);
+  /* Justera för exakt centrering */
+  padding: 12px 28px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+/* Knappens hover-effekt */
+.image-btn:hover {
+  background: #444;
+}
+
+.pradat {
+  margin-left: 67px;
+  margin-top: 67px;
+  transition: ease-in-out 10s;
+}
+
+.juant {
+  margin-left: 67px;
+  margin-top: 67px;
+}
+
+.armanit {
+  margin-left: 105px;
+  margin-top: 67px;
+}
+
+.prada,
+.juan,
+.armani {
+  filter: brightness(0.7);
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+
+.prada:hover,
+.juan:hover,
+.armani:hover {
+  
+  filter: brightness(1.1);
+}
+footer * {
+  box-sizing: border-box;
+
+}
+
+.footer {
+  padding-top: 50px;
+  /* flyttar ALL text uppåt */
+  padding-bottom: 40px;
+  background-color: #fff;
+
+
+
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  /* Samma färg som föräldern */
+  border: 1px solid #ccc;
+  /* Lägger till en tunn ljusgrå kant runt länken */
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  /* Gör att länkarna ligger på samma rad men kan ha bredd & höjd */
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+  /* Gör länken lite genomskinlig */
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  /* Visas på samma rad men behåller block-egenskaper */
+  padding: 0 15px;
+  /* 0px vertikalt, 15px horisontellt mellan elementen */
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+  /* Gör länken helt synlig vid hover */
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+/* code for dropdown*/
+
+.dropbutton {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #333333;
+  position: absolute;
+  width: 88px;
+  font-size: 82.5%;
+  text-align: center;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+ul.topnav .dropdown .dropdown-content a {
+  padding: 14px 10px;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+#telephone {
+  margin-left: 50px;
+  margin-bottom: 100px;
+  animation: fadeIn 3s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+}
+
+.hours {
+  margin-left: 50px;
+  font-size: 17px;
+  animation: fadeIn 3s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
+}
+
+.nummer {
+  margin-left: 50px;
+  transition: all ease 0.2s;
+  background-repeat: no-repeat;
+  animation: fadeIn 4.5s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  transition: all ease-out 0.2s;
+
+
+
+}
+
+.nummer:hover {
+  scale: 0.95;
+}
+
+
+#emailtitle {
+  margin-left: 50px;
+  margin-top: 100px;
+  animation: fadeIn 7s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
+}
+
+#email {
+  margin-left: 50px;
+  font-size: 17px;
+  margin-bottom: 0;
+
+  animation: fadeIn 8.5s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
+}
+
+
+
+.sectionförst {
+  background-image: url("images/assets-cached (1).jpg");
+  background-size: cover;
+
+}
+
+
+
+
+.product {
+  display: flex;
+  gap: 67px;
+  /* mellanrum mellan korten */
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gör att de hoppar ner på ny rad om skärmen är liten */
+  background-image: url("images/assets-cached (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 1;
+  /* påverkar allt innehåll – använd försiktigt */
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: arial;
+  animation: fadeIn 1.5s ease forwards;
+  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  opacity: 0;
+  font-family: "Maison Neue";
+
+  animation-delay: 0.4s;
+
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  /*för att få hela bilden att synas inom en bestämd ruta utan att bli beskuren.*/
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.card button {
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.menu {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.button2 {
+  border-color: #000;
+  background-color: white;
+  text-decoration: none;
+  color: #000;
+  border-width: 2px;
+  font-size: 12px;
+  padding: 4px 5px;
+  border-style: solid;
+  display: inline-block;
+  box-shadow: 20px;
+  border-radius: 40px;
+  transition: all ease 0.2s;
+}
+
+.button2:hover {
+  scale: 1.1;
+}
+
+.button3 {
+  border-color: pink;
+  background-color: pink;
+  text-decoration: none;
+  color: #000;
+  border-width: 1px;
+  font-size: 12px;
+  padding: 4px 5px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  transition: all ease 0.3s;
+}
+
+.button3:hover {
+  border-color: black;
+  padding: 5px 6px;
+
+}
+
+.price {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.price-animate {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.sizes {
+  display: flex;
+  justify-content: flex-start;
+  /* vänster */
+  gap: 5px;
+  margin-left: 5px;
+  width: 10rem;
+}
+
+.card h1,
+.card h3 {
+  font-size: 20px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.title {
+  height: 50px;
+
+}
+
+.brand {
+  color: black;
+  display: flex;
+  margin-left: 7px;
+  width: 10rem;
+}
+
+.qContainer {
+  width: 5rem;
+  position: absolute;
+  right: 10px;
+  bottom: 94.67px;
+
+}
+
+.qBox {
+  display: flex;
+  width: 5.1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px black solid;
+  border-radius: 12px;
+  padding: 3.5px 5px;
+}
+
+.qAmount {
+  font-size: 18px;
+
+}
+
+.qPlusBtn:hover,
+.qMinusBtn:hover {
+  cursor: pointer;
+}
