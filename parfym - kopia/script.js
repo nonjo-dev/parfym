@@ -40,6 +40,7 @@ else {
     alert("Du valde inte sten, sax eller påse.");
 }*/
 
+const test = []
 
 function randomSubpage() {
     let number = Math.random();
