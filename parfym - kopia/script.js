@@ -86,7 +86,7 @@ function changePrice(button, sizeCost, qChange, typeChange) {
             quantity += qChange;
             console.log("new quantity = " + quantity)
         }
-  
+
     }
     function calculatePriceTag(productQuantity, size) {
         console.log("productQuantity = " + productQuantity);
@@ -102,16 +102,19 @@ function changePrice(button, sizeCost, qChange, typeChange) {
         quantityContainer.classList.add("price-animate");
     }
     card.priceContainer.classList.add("price-animate");
-    
+
 
 
     // Wait for animation out, then change text
     setTimeout(() => {
-        if(quantity == 1){
-            finalPrice -= 0.01;
+        if (quantity == 1) {
+            card.priceContainer.textContent = "$" + card.sizePrice;
         }
-        
-        card.priceContainer.textContent = "$" + finalPrice;
+        else {
+            card.priceContainer.textContent = "$" + finalPrice;
+
+        }
+
 
 
         quantityContainer.textContent = quantity
