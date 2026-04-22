@@ -606,14 +606,14 @@ img.avatar {
   margin-left: 50px;
   margin-bottom: 100px;
   animation: fadeIn 3s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
 }
 
 .hours {
   margin-left: 50px;
   font-size: 17px;
   animation: fadeIn 3s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  
 
 }
 
@@ -622,7 +622,7 @@ img.avatar {
   transition: all ease 0.2s;
   background-repeat: no-repeat;
   animation: fadeIn 4.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
   transition: all ease-out 0.2s;
 
 
@@ -638,7 +638,7 @@ img.avatar {
   margin-left: 50px;
   margin-top: 100px;
   animation: fadeIn 7s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
 
 }
 
@@ -648,7 +648,7 @@ img.avatar {
   margin-bottom: 0;
 
   animation: fadeIn 8.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
 
 }
 
@@ -666,7 +666,7 @@ img.avatar {
 .product {
   display: flex;
   gap: 67px;
-  /* mellanrum mellan korten */
+
   justify-content: center;
   flex-wrap: wrap;
   /* gör att de hoppar ner på ny rad om skärmen är liten */
@@ -675,7 +675,7 @@ img.avatar {
   background-repeat: no-repeat;
   width: 100%;
   opacity: 1;
-  /* påverkar allt innehåll – använd försiktigt */
+
 }
 
 .card {
@@ -685,7 +685,7 @@ img.avatar {
   text-align: center;
   font-family: arial;
   animation: fadeIn 1.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
   opacity: 0;
   font-family: "Maison Neue";
 
