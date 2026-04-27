@@ -462,9 +462,10 @@ footer {
 .prada:hover,
 .juan:hover,
 .armani:hover {
-  
+
   filter: brightness(1.1);
 }
+
 footer * {
   box-sizing: border-box;
 
@@ -613,7 +614,7 @@ img.avatar {
   margin-left: 50px;
   font-size: 17px;
   animation: fadeIn 3s ease forwards;
-  
+
 
 }
 
@@ -660,7 +661,10 @@ img.avatar {
 
 }
 
-
+#meet {
+  justify-content: center;
+  text-align: center;
+}
 
 
 .product {
@@ -685,10 +689,8 @@ img.avatar {
   text-align: center;
   font-family: arial;
   animation: fadeIn 1.5s ease forwards;
-
   opacity: 0;
   font-family: "Maison Neue";
-
   animation-delay: 0.4s;
 
 }
