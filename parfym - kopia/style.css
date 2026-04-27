@@ -607,6 +607,7 @@ img.avatar {
   margin-left: 50px;
   margin-bottom: 100px;
   animation: fadeIn 3s ease forwards;
+  width: 20rem;
 
 }
 
@@ -614,6 +615,7 @@ img.avatar {
   margin-left: 50px;
   font-size: 17px;
   animation: fadeIn 3s ease forwards;
+  width: 20rem;
 
 
 }
@@ -623,7 +625,7 @@ img.avatar {
   transition: all ease 0.2s;
   background-repeat: no-repeat;
   animation: fadeIn 4.5s ease forwards;
-
+width: 20rem;
   transition: all ease-out 0.2s;
 
 
@@ -653,7 +655,12 @@ img.avatar {
 
 }
 
-
+#customer {
+  margin-left: 300px;
+  margin-top: 5rem;
+  margin: 0;
+ 
+}
 
 .sectionförst {
   background-image: url("images/assets-cached (1).jpg");
