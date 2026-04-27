@@ -664,6 +664,7 @@ img.avatar {
 #meet {
   justify-content: center;
   text-align: center;
+  animation: fadeIn 1.5s ease forwards;
 }
 
 
