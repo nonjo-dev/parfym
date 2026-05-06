@@ -608,22 +608,37 @@ img.avatar {
   margin-bottom: 100px;
   animation: fadeIn 3s ease forwards;
   width: 20rem;
+  
 
 }
 
-.test {
-     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+#tikki {
+  width: 30rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+  animation: fadeIn 3s ease forwards;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 10px;
+
 
 }
 
+#bi {
+  justify-content: center;
+  align-content: center;
+  width: 15rem;
+  margin-top: 50px;
+  margin-left: 10rem;
+    animation: fadeIn 3s ease forwards;
+    
+}
 .hours {
   margin-left: 50px;
   font-size: 17px;
   animation: fadeIn 3s ease forwards;
   width: 20rem;
- 
-
-
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nummer {
@@ -631,12 +646,8 @@ img.avatar {
   transition: all ease 0.2s;
   background-repeat: no-repeat;
   animation: fadeIn 4.5s ease forwards;
-width: 20rem;
+  width: 20rem;
   transition: all ease-out 0.2s;
-
-
-
-
 }
 
 .nummer:hover {
@@ -648,8 +659,6 @@ width: 20rem;
   margin-left: 50px;
   margin-top: 100px;
   animation: fadeIn 7s ease forwards;
-
-
 }
 
 #email {
@@ -662,17 +671,10 @@ width: 20rem;
 
 }
 
-#customer {
-  margin-left: 300px;
-  margin-top: 5rem;
-  margin: 0;
-  
- 
-}
-
 .sectionförst {
   background-image: url("images/assets-cached (1).jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
@@ -680,6 +682,8 @@ width: 20rem;
   justify-content: center;
   text-align: center;
   animation: fadeIn 1.5s ease forwards;
+  margin-top: 5rem;
+
 }
 
 
@@ -696,6 +700,17 @@ width: 20rem;
   width: 100%;
   opacity: 1;
 
+}
+
+
+.dr {
+    background-image: url("images/assets-cached (1).jpg");
+      background-size: cover;
+  background-repeat: no-repeat;
+    width: 100%;
+     display: flex;
+  gap: 200px;
+ 
 }
 
 .card {
