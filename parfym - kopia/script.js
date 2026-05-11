@@ -40,7 +40,7 @@ else {
     alert("Du valde inte sten, sax eller påse.");
 }*/
 
-const test = []
+
 
 function randomSubpage() {
     let number = Math.random();
@@ -94,7 +94,16 @@ function changePrice(button, sizeCost, qChange, typeChange) {
         console.log("calculated price = " + (Number(productQuantity) * Number(size)))
         return Number(productQuantity) * Number(size);
     }
-    var finalPrice = calculatePriceTag(quantity, card.sizePrice)
+
+    if (quantity !== 1) {
+        console.log("quantity !== 1")
+        var finalPrice = Math.round(calculatePriceTag(quantity, card.sizePrice))
+    }
+    else {
+        console.log("quantity = 1")
+        var finalPrice = card.sizePrice
+    }
+
     console.log("final price = " + finalPrice)
 
     // Add animation class
@@ -107,15 +116,9 @@ function changePrice(button, sizeCost, qChange, typeChange) {
 
     // Wait for animation out, then change text
     setTimeout(() => {
-        if (quantity == 1) {
-            card.priceContainer.textContent = "$" + finalPrice;
-            console.log("quantity = " + quantity)
-        }
-        else {
-            card.priceContainer.textContent = "$" + Math.round(finalPrice);
-            console.log("something is wrong")
-        }
 
+
+        card.priceContainer.textContent = "$" + finalPrice;
 
 
         quantityContainer.textContent = quantity

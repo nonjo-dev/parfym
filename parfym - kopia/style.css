@@ -119,6 +119,7 @@ footer {
   border-radius: 30px;
   /* Runda hörn */
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -462,9 +463,10 @@ footer {
 .prada:hover,
 .juan:hover,
 .armani:hover {
-  
+
   filter: brightness(1.1);
 }
+
 footer * {
   box-sizing: border-box;
 
@@ -509,6 +511,7 @@ footer * {
 
 .footer .social a:hover {
   opacity: 0.9;
+
 }
 
 .footer ul {
@@ -548,7 +551,7 @@ footer * {
 }
 
 
-/* code for dropdown*/
+
 
 .dropbutton {
   position: relative;
@@ -606,15 +609,45 @@ img.avatar {
   margin-left: 50px;
   margin-bottom: 100px;
   animation: fadeIn 3s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  width: 20rem;
+
+
+}
+
+#tikki {
+  width: 30rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+  animation: fadeIn 3s ease forwards;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+
+
+}
+
+#bim {
+    animation: fadeIn 6.7s ease forwards;
+    animation-delay: 8;
+ 
+}
+
+#bi {
+  justify-content: center;
+  align-content: center;
+  width: 15rem;
+  margin-top: 50px;
+  margin-left: 10rem;
+  animation: fadeIn 3s ease forwards;
+
 }
 
 .hours {
   margin-left: 50px;
   font-size: 17px;
   animation: fadeIn 3s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
-
+  width: 20rem;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nummer {
@@ -622,11 +655,8 @@ img.avatar {
   transition: all ease 0.2s;
   background-repeat: no-repeat;
   animation: fadeIn 4.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+  width: 20rem;
   transition: all ease-out 0.2s;
-
-
-
 }
 
 .nummer:hover {
@@ -638,8 +668,6 @@ img.avatar {
   margin-left: 50px;
   margin-top: 100px;
   animation: fadeIn 7s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
-
 }
 
 #email {
@@ -648,25 +676,30 @@ img.avatar {
   margin-bottom: 0;
 
   animation: fadeIn 8.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
+
 
 }
-
-
 
 .sectionförst {
   background-image: url("images/assets-cached (1).jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
+#meet {
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease forwards;
+  margin-top: 5rem;
 
+}
 
 
 .product {
   display: flex;
   gap: 67px;
-  /* mellanrum mellan korten */
+
   justify-content: center;
   flex-wrap: wrap;
   /* gör att de hoppar ner på ny rad om skärmen är liten */
@@ -675,7 +708,22 @@ img.avatar {
   background-repeat: no-repeat;
   width: 100%;
   opacity: 1;
-  /* påverkar allt innehåll – använd försiktigt */
+
+}
+
+
+.dr {
+  background-image: url("images/assets-cached (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  gap: 200px;
+  display: flex;
+  gap: 15rem;
+  align-items: flex-start;
+ 
+
 }
 
 .card {
@@ -685,10 +733,8 @@ img.avatar {
   text-align: center;
   font-family: arial;
   animation: fadeIn 1.5s ease forwards;
-  /* Applicerar en "fade in"-animation under 1.5 sekunder */
   opacity: 0;
   font-family: "Maison Neue";
-
   animation-delay: 0.4s;
 
 }
@@ -743,6 +789,7 @@ img.avatar {
   box-shadow: 20px;
   border-radius: 40px;
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 
 .button2:hover {
@@ -762,6 +809,7 @@ img.avatar {
   align-items: center;
   border-radius: 40px;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .button3:hover {
